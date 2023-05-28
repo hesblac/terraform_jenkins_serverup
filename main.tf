@@ -14,8 +14,8 @@ data "aws_availability_zones" "available" {}     //(2) default resource
 
 
 resource "aws_default_subnet" "default_az1" {
-  availability_zone = data.aws_availability_zones.available.names[0]  //we integrate the avail-zone from data to use the first avz in the list
-  tags = {
+  availability_zone = data.aws_availability_zones.available.names[0]  //we integrate the avail-zone from data to use 
+  tags = {                                                                  //the first availability zone in the list
     Name = "Default subnet for us-east-1a"
   }
 }
@@ -63,7 +63,7 @@ resource "aws_instance" "jenkins_server" {                    //edit the instanc
   key_name = "checkup" #this should be the key already in the aws account
 
   tags = {
-    "Name" = "terraform_Jenkins_server"                             # make variables out of all and modulize everyting 
+    "Name" = "terraform_Jenkins_server"                            
   }
 }
 
@@ -136,3 +136,6 @@ output "jenkins_url" {
 #   ]
 # }
 
+
+
+ # make variables out of all and modulize everyting 
