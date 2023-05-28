@@ -7,7 +7,7 @@ Tools needed:GitHub,terraformJenkins shell script.
 
 
 
-Workflow:
+#Workflow:
 
 have two files in your workspace(main.tf and jenkins_script.sh)
 
@@ -16,7 +16,7 @@ the first file, main.tf will contain the terraform code.
 The other will contain the shell script to install jenkins on any ubuntu server(uses apt)
 
 
-the main.tf file:
+#the main.tf file:
 
 create the provider block
 
