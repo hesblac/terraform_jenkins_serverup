@@ -5,7 +5,7 @@ Purpose: we can deploy any server using the terraform “null_resource” and ha
 
 Tools needed:GitHub,terraformJenkins shell script.
 
-https://github.com/hesblac/installation_scripts/blob/master/jenkins.sh
+
 
 Workflow:
 
